@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  font-family: "Ubuntu", sans-serif;
+}
+
+input {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #c5e4e7;
+  min-height: 100vh;
+  background-image: url(./images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center 5rem;
+}
+
+main {
+  margin-top: 14rem;
+  border-radius: 25px 25px 0px 0px;
+  background: #fff;
+  box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 31.1rem;
+}
+
+.billInput label {
+  display: block;
+  color: #5e7a7d;
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.billInput input {
+  border: none;
+  border-radius: 5px;
+  background: #f3f9fa;
+  padding: 6px 17.5px 6px 0;
+  text-align: right;
+  width: 31.1rem;
+  margin-top: 6px;
+  color: #00474b;
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: normal;
+  background-image: url(./images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 17px 9px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.billInput input::placeholder,
+.people input::placeholder {
+  color: #00474b;
+  opacity: 0.35;
+}
+
+.buttonLabel {
+  color: #5e7a7d;
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 1.6rem;
+  margin-top: 3.2rem;
+  width: 100%;
+}
+
+.percentButtons {
+  width: 31.1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+  grid-template-rows: repeat(3, 3fr);
+  gap: 1.6rem;
+}
+
+.percent {
+  width: 14.66rem;
+  height: 4.8rem;
+  border-radius: 5px;
+  background: #00474b;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.percent.clicked {
+  background: #26c2ae;
+}
+
+.percent:hover {
+  cursor: pointer;
+}
+
+#custominput {
+  border: none;
+  width: 14.66rem;
+  height: 4.8rem;
+  border-radius: 5px;
+  background: #f3f9fa;
+  color: #547878;
+  text-align: right;
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: normal;
+  padding-right: 1.7rem;
+}
+
+#custominput::placeholder {
+  color: #547878;
+}
+
+.people {
+  margin-top: 3.2rem;
+}
+
+.peopleZero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.peopleZero label {
+  color: #5e7a7d;
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.peopleZero span {
+  color: #e17457;
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: normal;
+  display: none;
+}
+
+.people input {
+  border: none;
+  border-radius: 5px;
+  background: #f3f9fa;
+  padding: 6px 17.5px 6px 0;
+  text-align: right;
+  width: 31.1rem;
+  color: #00474b;
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 6px;
+  background-image: url(./images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 17px 9px;
+}
+
+.result {
+  border-radius: 15px;
+  background: #00474b;
+  padding: 3.9rem 2.2rem 2.4rem 2.4rem;
+  width: 32.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.2rem;
+}
+
+.tip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tip p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: normal;
+  width: 10ch;
+}
+
+.tip p span {
+  color: #7f9d9f;
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+#tip-result {
+  color: #26c2ae;
+  text-align: right;
+  font-size: 3.2rem;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.667px;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.total p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.total p span {
+  color: #7f9d9f;
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+#total-result {
+  color: #26c2ae;
+  text-align: right;
+  font-size: 3.2rem;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.667px;
+}
+
+#reset {
+  width: 28.1rem;
+  height: 4.8rem;
+  border-radius: 5px;
+  background: #26c2ae;
+  color: #0d1321;
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  line-height: normal;
+  border: none;
+  margin-top: 3.5rem;
+}
+
+#reset:hover {
+  cursor: pointer;
+}
