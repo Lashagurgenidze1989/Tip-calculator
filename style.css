@@ -301,7 +301,7 @@ input:focus {
 @media (min-width: 1440px) {
   body {
     background-position: center 14rem;
-    padding-bottom: 24rem;
+    padding-bottom: 15rem;
   }
 
   main {
