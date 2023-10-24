@@ -83,7 +83,7 @@ function calculator() {
     totalResult.textContent = "$0.00";
   } else {
     tipAmount = (billValue * percentValue) / 100 / peopleValue;
-    totalAmount = billValue + (billValue * percentValue) / 100 / peopleValue;
+    totalAmount = billValue / peopleValue + tipAmount;
 
     tipResult.textContent = `$${tipAmount.toFixed(2)}`;
     totalResult.textContent = `$${totalAmount.toFixed(2)}`;
